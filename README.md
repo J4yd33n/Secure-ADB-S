@@ -51,3 +51,4 @@ This is a research project for simulation and educational purposes only.
    ```bash
    python ids_engine.py
    ```
+<img width="1277" height="717" alt="Screenshot 2026-04-23 223550" src="https://github.com/user-attachments/assets/b2aad849-1529-408b-8ba9-a4988694b386" />
