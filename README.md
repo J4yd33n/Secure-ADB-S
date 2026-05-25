@@ -24,7 +24,7 @@ The system was evaluated against spoofing, replay, and message injection attacks
 ## ⚠️ Disclaimer
 This is a research project for simulation and educational purposes only.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-markdown## ⚙️ Installation & Setup
+ ⚙️ Installation & Setup(terminal 1)
 
 1. **Clone the Repository:**
    ```bash
@@ -42,6 +42,12 @@ markdown## ⚙️ Installation & Setup
 
 3. **Run the Application:**
    ```bash
-   python app.py
+   python api.py
    ```
    *Access the dashboard at `http://127.0.0.1:5000`*
+
+   
+4. **in a new terminal
+   ```bash
+   python ids_engine.py
+   ```
