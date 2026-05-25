@@ -23,3 +23,25 @@ The system was evaluated against spoofing, replay, and message injection attacks
 
 ## ⚠️ Disclaimer
 This is a research project for simulation and educational purposes only.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+markdown## ⚙️ Installation & Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com
+   cd Secure-ADB-S
+   ```
+
+2. **Install Dependencies:**
+   It is recommended to use a virtual environment.
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Application:**
+   ```bash
+   python app.py
+   ```
+   *Access the dashboard at `http://127.0.0.1:5000`*
