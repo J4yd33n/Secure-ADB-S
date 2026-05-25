@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Abuja ATC Cyber Defense Radar</title>
+
+<style>
+body {
+  background: #050b14;
+  color: #00ffcc;
+  font-family: Arial;
+  overflow: hidden;
+}
+h1,h2 { text-align:center; margin:5px; }
+
+#radar {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid #00ffcc;
+  background: radial-gradient(circle, #001a26 0%, #000 70%);
+}
+
+.sweep {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: rgba(0,255,204,0.7);
+  top: 50%;
+  left: 50%;
+  transform-origin: left center;
+  animation: sweep 4s linear infinite;
+}
+
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.aircraft {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: cyan;
+  border-radius: 50%;
+}
+
+.spoof {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+
+#alerts {
+  width: 95%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #00ffcc;
+  padding: 4px;
+  text-align: center;
+}
+
+#controls {
+  text-align:center;
+  margin: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Nigeria Airspace Management Agency</h1>
+<h2>Abuja ATC Cyber Defense Operations Center</h2>
+
+<div id="radar">
+  <div class="sweep"></div>
+</div>
+
+<div id="controls">
+Replay:
+<input type="range" id="replay" min="1" max="60" value="10">
+<button onclick="downloadPDF()">Export PDF</button>
+<a href="compliance.html" target="_blank">ICAO / NIST Compliance</a>
+</div>
+
+<table id="alerts">
+<thead>
+<tr>
+<th>Time</th><th>Airport</th><th>Source</th>
+<th>Attack</th><th>Severity</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+
+<script>
+const API = "http://" + location.hostname + ":5000/alerts";
+const radar = document.getElementById("radar");
+
+function drawAircraft(x,y,spoof=false){
+  const a = document.createElement("div");
+  a.className = "aircraft" + (spoof ? " spoof":"");
+  a.style.left = x + "px";
+  a.style.top = y + "px";
+  radar.appendChild(a);
+  setTimeout(()=>a.remove(),4000);
+}
+
+async function loadAlerts(){
+  const r = await fetch(API);
+  const data = await r.json();
+
+  const tbody = document.querySelector("#alerts tbody");
+  tbody.innerHTML = "";
+
+  data.slice(-20).reverse().forEach(a=>{
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${new Date(a.timestamp).toLocaleTimeString()}</td>
+      <td>${a.airport}</td>
+      <td>${a.source_ip}</td>
+      <td>${a.attack}</td>
+      <td>${a.severity}</td>
+    `;
+    tbody.appendChild(tr);
+
+    // Aircraft animation
+    const angle = Math.random()*360;
+    const rdist = Math.random()*250;
+    const x = 300 + rdist*Math.cos(angle);
+    const y = 300 + rdist*Math.sin(angle);
+    drawAircraft(x,y,a.attack==="AIRCRAFT_SPOOFING");
+  });
+}
+
+function downloadPDF(){
+  window.open("http://" + location.hostname + ":5000/report","_blank");
+}
+
+setInterval(loadAlerts,2000);
+</script>
+
+</body>
+</html>

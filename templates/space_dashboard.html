@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SATCOM-IDS - Space ADS-B Orbital Threat Detection</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Exo 2', 'Orbitron', monospace;
+            background: radial-gradient(ellipse at center, #0a0a23 0%, #000000 70%);
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(120,119,198,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,119,198,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120,219,255,0.3) 0%, transparent 50%);
+            color: #00d4ff;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+                radial-gradient(1px 1px at 90px 40px, #fff, transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,212,255,0.03) 2px, rgba(0,212,255,0.03) 4px);
+            pointer-events: none;
+            animation: stars 20s linear infinite;
+            z-index: 1;
+        }
+        @keyframes stars {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(-1000px) rotate(360deg); }
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 320px 1fr 420px;
+            grid-template-rows: 90px 1fr;
+            height: 100vh;
+            gap: 15px;
+            padding: 15px;
+            position: relative;
+            z-index: 10;
+        }
+        .header {
+            grid-column: 1 / -1;
+            background: rgba(10,10,35,0.95);
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 50px rgba(0,212,255,0.3);
+        }
+        .header h1 {
+            font-size: 2.8em;
+            font-weight: 800;
+            background: linear-gradient(45deg, #00d4ff, #ff6b9d, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-right: auto;
+            text-shadow: 0 0 30px rgba(0,212,255,0.5);
+        }
+        .orbital-controls {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: flex;
+            gap: 12px;
+        }
+        .space-radar {
+            grid-column: 2;
+            grid-row: 2;
+            background: rgba(0,0,20,0.9);
+            border: 3px solid #00d4ff;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 0 100px rgba(0,212,255,0.1);
+        }
+        #orbital-canvas {
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+        }
+        .left-panel {
+            grid-column: 1;
+            grid-row: 2;
+            background: rgba(10,10,35,0.97);
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 25px;
+            overflow-y: auto;
+        }
+        .right-panel {
+            grid-column: 3;
+            grid-row: 2;
+            background: rgba(10,10,35,0.97);
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 25px;
+            overflow-y: auto;
+        }
+        .space-alert {
+            background: rgba(255,68,68,0.25);
+            border-left: 5px solid #ff4444;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            animation: orbitalPulse 1.5s infinite;
+            box-shadow: 0 0 20px rgba(255,68,68,0.4);
+        }
+        .alert-critical { border-left-color: #ff4444 !important; }
+        .alert-high { border-left-color: #ff8800 !important; }
+        .alert-medium { border-left-color: #ffcc00 !important; }
+        @keyframes orbitalPulse {
+            0% { box-shadow: 0 0 0 0 rgba(255,68,68,0.7), inset 0 0 20px rgba(255,68,68,0.2); }
+            70% { box-shadow: 0 0 0 25px rgba(255,68,68,0), inset 0 0 30px rgba(255,68,68,0.1); }
+            100% { box-shadow: 0 0 0 0 rgba(255,68,68,0), inset 0 0 20px rgba(255,68,68,0.2); }
+        }
+        .orbital-panel {
+            background: rgba(0,212,255,0.15);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border: 2px solid #00d4ff;
+            box-shadow: 0 0 30px rgba(0,212,255,0.2);
+        }
+        button {
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            border: 2px solid #00d4ff;
+            color: #000;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-family: 'Exo 2', monospace;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s;
+            margin: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+        button:hover::before { left: 100%; }
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 40px rgba(0,212,255,0.6);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: rgba(0,212,255,0.12);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(0,212,255,0.5);
+            backdrop-filter: blur(10px);
+        }
+        .stat-number {
+            font-size: 3em;
+            font-weight: 800;
+            background: linear-gradient(45deg, #00d4ff, #ff6b9d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .satellite-list {
+            max-height: 350px;
+            overflow-y: auto;
+        }
+        .satellite-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: rgba(0,212,255,0.08);
+            border-radius: 10px;
+            border-right: 5px solid #00d4ff;
+        }
+        .threat-score {
+            color: #ff4444;
+            font-weight: 800;
+            font-size: 1.2em;
+        }
+        #space-audio { display: none; }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>🌌 SATCOM-IDS v2.1</h1>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalAlerts">0</div>
+                    <div>Orbital Alerts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="activeSatellites">0</div>
+                    <div>LEO Satellites</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="criticalThreats">0</div>
+                    <div>Critical Threats</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="orbitalCoverage">0</div>
+                    <div>Coverage %</div>
+                </div>
+            </div>
+            <div class="orbital-controls">
+                <button onclick="toggleFullscreen()">🌑 Fullscreen</button>
+                <button onclick="exportPDF()">📡 Orbital PDF</button>
+                <button onclick="exportCSV()">📊 Telemetry CSV</button>
+            </div>
+        </div>
+
+        <div class="left-panel">
+            <h3 style="margin-bottom: 20px; color: #00d4ff;">🚨 Orbital Threat Feed</h3>
+            <div id="alerts-feed"></div>
+            <audio id="space-audio" src="data:audio/wav;base64,UklGRp4CAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoCAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSq+0/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSq+0/"></audio>
+        </div>
+
+        <div class="space-radar">
+            <canvas id="orbital-canvas"></canvas>
+        </div>
+
+        <div class="right-panel">
+            <h3 style="margin-bottom: 20px; color: #00d4ff;">🎯 Orbital Attack Control</h3>
+            <div class="orbital-panel">
+                <select id="attack-type" style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #00d4ff;">
+                    <option value="leo-spoof">LEO ADS-B Spoofing</option>
+                    <option value="uplink-jam">Uplink Jamming</option>
+                    <option value="quantum-attack">Quantum Key Attack</option>
+                    <option value="space-weather">Space Weather Injection</option>
+                    <option value="orbital-flood">Orbital Flood</option>
+                    <option value="ground-spoof">Ground Station Spoof</option>
+                </select>
+                <select id="target-satellite" style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #00d4ff;">
+                    <option value="STARLINK-1234">STARLINK-1234</option>
+                    <option value="ONEWEB-A42">ONEWEB-A42</option>
+                    <option value="IRIDIUM-88">IRIDIUM-88</option>
+                    <option value="ALL">ALL CONSTELLATION</option>
+                </select>
+                <select id="attack-intensity" style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #00d4ff;">
+                    <option value="LOW">Low Orbit</option>
+                    <option value="MEDIUM">Medium Orbit</option>
+                    <option value="HIGH">HIGH VELOCITY</option>
+                </select>
+                <br>
+                <button onclick="injectOrbitalAttack()" style="width: 100%; font-size: 1.1em;">🚀 DEPLOY ORBITAL ATTACK</button>
+            </div>
+            <h3 style="margin: 25px 0 15px 0; color: #00d4ff;">🛰️ LEO Constellation (Threat Scored)</h3>
+            <div class="satellite-list" id="satellite-list"></div>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        const canvas = document.getElementById('orbital-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+
+        let satellites = {};
+        let alerts = [];
+        let centerX = canvas.width / 2;
+        let centerY = canvas.height / 2;
+        let orbitalSweep = 0;
+        let earthGradient = null;
+
+        // Space radar animation
+        function initEarth() {
+            earthGradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, 200);
+            earthGradient.addColorStop(0, '#4a90e2');
+            earthGradient.addColorStop(0.3, '#6ba8ff');
+            earthGradient.addColorStop(0.6, '#1e3a8a');
+            earthGradient.addColorStop(1, 'rgba(0,20,60,0.8)');
+        }
+
+        function animateOrbitalRadar() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Earth in center
+            if (!earthGradient) initEarth();
+            ctx.fillStyle = earthGradient;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 180, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = '#00d4ff';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Orbital rings
+            ctx.strokeStyle = 'rgba(0,212,255,0.3)';
+            ctx.lineWidth = 1;
+            for (let r = 250; r < 500; r += 50) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, r, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+
+            // Orbital sweep (faster for LEO)
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.rotate(orbitalSweep * Math.PI / 180);
+            const sweepGradient = ctx.createLinearGradient(0, 0, 600, 0);
+            sweepGradient.addColorStop(0, 'rgba(0,212,255,0.9)');
+            sweepGradient.addColorStop(0.5, 'rgba(0,212,255,0.3)');
+            sweepGradient.addColorStop(1, 'rgba(0,212,255,0)');
+            ctx.strokeStyle = sweepGradient;
+            ctx.lineWidth = 4;
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(600, 0);
+            ctx.stroke();
+            ctx.restore();
+
+            // Draw satellites with threat visualization
+            Object.entries(satellites).forEach(([satId, sat]) => {
+                const angle = (sat.orbit_angle || 0) * Math.PI / 180;
+                const radius = 300 + (sat.altitude || 550) / 10;
+                const x = centerX + Math.cos(angle) * radius;
+                const y = centerY + Math.sin(angle) * radius;
+                
+                // Threat corona
+                if (sat.threat_score > 0.3) {
+                    const coronaSize = 15 + sat.threat_score * 20;
+                    const coronaGradient = ctx.createRadialGradient(x, y, 0, x, y, coronaSize);
+                    coronaGradient.addColorStop(0, `rgba(255,68,68,${sat.threat_score})`);
+                    coronaGradient.addColorStop(1, 'rgba(255,68,68,0)');
+                    ctx.fillStyle = coronaGradient;
+                    ctx.beginPath();
+                    ctx.arc(x, y, coronaSize, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                // Satellite body
+                ctx.fillStyle = sat.threat_score > 0.6 ? '#ff4444' : sat.coverage > 0.8 ? '#00ff88' : '#00d4ff';
+                ctx.beginPath();
+                ctx.arc(x, y, 8, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 1.5;
+                ctx.stroke();
+
+                // Antenna
+                ctx.strokeStyle = sat.threat_score > 0.6 ? '#ff8888' : '#88ff88';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+                ctx.moveTo(x, y - 12);
+                ctx.lineTo(x, y - 6);
+                ctx.stroke();
+
+                // Coverage footprint (when active)
+                if (sat.coverage > 0.7) {
+                    ctx.strokeStyle = 'rgba(0,255,136,0.4)';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.arc(x, y, 40 * sat.coverage, 0, Math.PI * 2);
+                    ctx.stroke();
+                }
+            });
+
+            orbitalSweep = (orbitalSweep + 4) % 360; // Fast LEO sweep
+            requestAnimationFrame(animateOrbitalRadar);
+        }
+
+        // Socket handlers
+        socket.on('satellite_update', (data) => {
+            satellites = data.satellites;
+            updateSatelliteList();
+            updateStats();
+        });
+
+        socket.on('space_alert', (alert) => {
+            alerts.unshift(alert);
+            if (alerts.length > 50) alerts.pop();
+            displaySpaceAlert(alert);
+            if (alert.severity === 'CRITICAL') playSpaceAlert();
+        });
+
+        function displaySpaceAlert(alert) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `space-alert alert-${alert.severity.toLowerCase()}`;
+            alertDiv.innerHTML = `
+                <div style="font-size: 1.1em; font-weight: 700;">${alert.threat_type}</div>
+                <div style="color: #ffcc88; margin: 8px 0;">${alert.timestamp}</div>
+                <div>${alert.satellite_id || 'N/A'} | Orbit: ${alert.orbit || 'LEO'} | Score: ${alert.threat_score?.toFixed(1) || 0}</div>
+                <div style="font-size: 0.9em; color: #888; margin-top: 10px;">${alert.description}</div>
+            `;
+            document.getElementById('alerts-feed').prepend(alertDiv);
+        }
+
+        function updateSatelliteList() {
+            const list = document.getElementById('satellite-list');
+            list.innerHTML = '';
+            Object.entries(satellites).slice(0, 12).forEach(([satId, sat]) => {
+                const item = document.createElement('div');
+                item.className = 'satellite-item';
+                item.innerHTML = `
+                    <span>🛰️ ${satId} (${sat.constellation || 'UNK'})</span>
+                    <div>
+                        <span>${Math.round(sat.coverage * 100)}% Cov</span>
+                        <span class="threat-score">${Math.round(sat.threat_score * 100)}%</span>
+                    </div>
+                `;
+                list.appendChild(item);
+            });
+        }
+
+        function updateStats() {
+            document.getElementById('totalAlerts').textContent = alerts.length;
+            document.getElementById('activeSatellites').textContent = Object.keys(satellites).length;
+            document.getElementById('criticalThreats').textContent = alerts.filter(a => a.severity === 'CRITICAL').length;
+            document.getElementById('orbitalCoverage').textContent = Math.round(
+                Object.values(satellites).reduce((sum, s) => sum + (s.coverage || 0), 0) / Math.max(Object.keys(satellites).length, 1) * 100
+            );
+        }
+
+        function injectOrbitalAttack() {
+            const attack = {
+                type: document.getElementById('attack-type').value,
+                target: document.getElementById('target-satellite').value,
+                intensity: document.getElementById('attack-intensity').value
+            };
+            fetch('/orbital-attack', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(attack)
+            });
+        }
+
+        function playSpaceAlert() {
+            const audio = document.getElementById('space-audio');
+            audio.currentTime = 0;
+            audio.play().catch(e => console.log('Space alert audio failed'));
+        }
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        function exportPDF() { window.open('/api/export/pdf', '_blank'); }
+        function exportCSV() {
+            const csv = ['Time,Threat,Severity,Satellite,Orbit,Score\n'].concat(
+                alerts.slice(0, 50).map(a => 
+                    `"${a.timestamp}","${a.threat_type}",${a.severity},"${a.satellite_id || ''}",${a.orbit || 'LEO'},${a.threat_score || 0}`
+                )
+            ).join('\n');
+            const blob = new Blob([csv], {type: 'text/csv'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = `satcom-orbital-${new Date().toISOString()}.csv`; a.click();
+        }
+
+        // Initialize space radar
+        window.addEventListener('resize', () => {
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+            centerX = canvas.width / 2;
+            centerY = canvas.height / 2;
+        });
+        animateOrbitalRadar();
+        socket.emit('request_satellites');
+        setInterval(() => socket.emit('request_satellites'), 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Abuja ATC Cyber Defense Radar</title>
+
+<style>
+body {
+    background:black;
+    color:#00ffcc;
+    font-family: monospace;
+}
+
+#radar {
+    width:500px;
+    height:500px;
+    border:2px solid #00ffcc;
+    border-radius:50%;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.sweep {
+    width:100%;
+    height:100%;
+    position:absolute;
+    border-radius:50%;
+    animation: sweep 4s linear infinite;
+    background: conic-gradient(rgba(0,255,204,.4), transparent 60%);
+}
+
+@keyframes sweep {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.aircraft {
+    position:absolute;
+    font-size:18px;
+}
+
+.ring {
+    position:absolute;
+    border-radius:50%;
+    border:2px solid red;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {opacity:1}
+    100% {opacity:0}
+}
+
+table {
+    width:100%;
+    margin-top:20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border:1px solid #00ffcc;
+    padding:6px;
+}
+</style>
+</head>
+
+<body>
+
+<h2 align="center">Nigeria Airspace Management Agency<br>Abuja ATC Cyber Defense Radar</h2>
+
+<div id="radar">
+    <div class="sweep"></div>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Time (UTC)</th>
+<th>Attack</th>
+<th>Severity</th>
+<th>ML Score</th>
+</tr>
+</thead>
+<tbody id="alerts"></tbody>
+</table>
+
+<script>
+async function loadAlerts(){
+    const res = await fetch("/alerts");
+    const data = await res.json();
+
+    const tbody = document.getElementById("alerts");
+    const radar = document.getElementById("radar");
+
+    tbody.innerHTML = "";
+    radar.querySelectorAll(".aircraft,.ring").forEach(e=>e.remove());
+
+    data.reverse().forEach(a=>{
+        tbody.innerHTML += `
+        <tr>
+            <td>${a.timestamp}</td>
+            <td>${a.attack}</td>
+            <td>${a.severity}</td>
+            <td>${a.ml_score}</td>
+        </tr>`;
+
+        let x = Math.random()*460;
+        let y = Math.random()*460;
+
+        let plane = document.createElement("div");
+        plane.className="aircraft";
+        plane.innerHTML="✈";
+        plane.style.left=x+"px";
+        plane.style.top=y+"px";
+
+        let ring = document.createElement("div");
+        ring.className="ring";
+        ring.style.left=(x-10)+"px";
+        ring.style.top=(y-10)+"px";
+        ring.style.width=(40*a.ml_score)+"px";
+        ring.style.height=(40*a.ml_score)+"px";
+
+        radar.appendChild(plane);
+        radar.appendChild(ring);
+    });
+}
+
+setInterval(loadAlerts, 2000);
+loadAlerts();
+</script>
+
+</body>
+</html>

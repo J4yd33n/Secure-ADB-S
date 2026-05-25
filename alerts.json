@@ -1,0 +1,4950 @@
+[
+  {
+    "timestamp": "2026-05-14 09:26:04",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 148
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:04",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 130
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:05",
+    "airport": "ADS-B",
+    "attack": "VDL2_OVERLOAD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "datagrams": 154
+    },
+    "ml_score": 0.9079,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:05",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 73
+    },
+    "ml_score": 0.6688,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:05",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 11,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:06",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 21,
+      "rate_per_sec": 10.5
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:07",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 140,
+      "recent_5s": 43
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:07",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 134,
+      "anomalies": 66,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 13,
+      "ghost_aircraft": 13,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.8097,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 168
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 151
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 56
+    },
+    "ml_score": 0.5333,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 2,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.9314,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 7,
+      "rate_per_sec": 3.5
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:08",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 157,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5043,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:09",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 140,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6682,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 21,
+      "ghost_aircraft": 21,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5004,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 179
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 160
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 53
+    },
+    "ml_score": 0.6122,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 9,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6571,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 163,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5706,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:10",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 149,
+      "anomalies": 40,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6729,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:11",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 20,
+      "ghost_aircraft": 20,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5434,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:11",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 182
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:11",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 169
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:11",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 50
+    },
+    "ml_score": 0.6902,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:12",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 38.9,
+      "mem_pct": 79.9
+    },
+    "ml_score": 0.6781,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:12",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 8,
+      "rate_per_sec": 4.0
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:12",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 170,
+      "recent_5s": 31
+    },
+    "ml_score": 0.5403,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:12",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 156,
+      "anomalies": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6615,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:13",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 175
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:13",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 177
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:13",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 56
+    },
+    "ml_score": 0.5333,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:13",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 163,
+      "anomalies": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6615,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:14",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 18,
+      "ghost_aircraft": 18,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6132,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:14",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 166
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 186
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 3,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.9314,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 35.3,
+      "mem_pct": 80.0
+    },
+    "ml_score": 0.7062,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 7,
+      "rate_per_sec": 3.5
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 191,
+      "recent_5s": 31
+    },
+    "ml_score": 0.5403,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:15",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 167,
+      "anomalies": 39,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6615,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:16",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 18,
+      "ghost_aircraft": 18,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6132,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:16",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 171
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:16",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 196
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:17",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 7,
+      "rate_per_sec": 3.5
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:17",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 174,
+      "anomalies": 41,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.681,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 20,
+      "ghost_aircraft": 20,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5434,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 170
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 203
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 11,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 206,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5043,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:18",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 185,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6302,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:20",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 161
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:20",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 210
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:20",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 9.5,
+      "mem_pct": 80.0
+    },
+    "ml_score": 0.543,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:20",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 213,
+      "recent_5s": 22
+    },
+    "ml_score": 0.5652,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:20",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 192,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6682,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:21",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 155
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:21",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 220
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:21",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 217,
+      "recent_5s": 23
+    },
+    "ml_score": 0.5304,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:21",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 201,
+      "anomalies": 48,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.607,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 150
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 229
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 54
+    },
+    "ml_score": 0.5973,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 2,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.9314,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 31.6,
+      "mem_pct": 80.0
+    },
+    "ml_score": 0.6781,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:23",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 204,
+      "anomalies": 42,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6729,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:24",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 156
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:24",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 233
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:24",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 46
+    },
+    "ml_score": 0.6828,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:25",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 243,
+      "recent_5s": 36
+    },
+    "ml_score": 0.7505,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:25",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 213,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.627,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:26",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 158
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:26",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 245
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:26",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 44
+    },
+    "ml_score": 0.6932,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:26",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 6,
+      "rate_per_sec": 3.0
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:26",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 250,
+      "recent_5s": 35
+    },
+    "ml_score": 0.6704,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:27",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 219,
+      "anomalies": 49,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5898,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 21,
+      "ghost_aircraft": 21,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5004,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 158
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 260
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 40
+    },
+    "ml_score": 0.6699,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 9,
+      "rate_per_sec": 4.5
+    },
+    "ml_score": 0.5238,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 260,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5706,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:28",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 225,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6682,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:29",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 16,
+      "ghost_aircraft": 16,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7209,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:29",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 158
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:29",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 267
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:29",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 42
+    },
+    "ml_score": 0.6776,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:29",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 3,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.9314,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:30",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 10.0,
+      "mem_pct": 80.1
+    },
+    "ml_score": 0.5733,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:30",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 5,
+      "rate_per_sec": 2.5
+    },
+    "ml_score": 0.7352,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:30",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 266,
+      "recent_5s": 24
+    },
+    "ml_score": 0.5042,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:30",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 229,
+      "anomalies": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6615,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:31",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 151
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:31",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 276
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:31",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 41
+    },
+    "ml_score": 0.6724,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:31",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 8,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.5247,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:32",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 238,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6682,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 156
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 282
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 45
+    },
+    "ml_score": 0.688,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 9,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6571,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 26.3,
+      "mem_pct": 80.1
+    },
+    "ml_score": 0.6717,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:33",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 250,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.627,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:34",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 160
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:34",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 292
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:34",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 48
+    },
+    "ml_score": 0.6776,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:35",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 10.0,
+      "mem_pct": 80.0
+    },
+    "ml_score": 0.5515,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:35",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 294,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5043,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:35",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 261,
+      "anomalies": 49,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5898,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 162
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 302
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 50
+    },
+    "ml_score": 0.6902,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 10.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.8539,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 304,
+      "recent_5s": 32
+    },
+    "ml_score": 0.5483,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:36",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 267,
+      "anomalies": 51,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5817,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 159
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 311
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 54
+    },
+    "ml_score": 0.5973,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 9,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6571,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 5.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.812,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 314,
+      "recent_5s": 34
+    },
+    "ml_score": 0.6378,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:38",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 277,
+      "anomalies": 53,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5459,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:41",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 330
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:42",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 15,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:44",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 18,
+      "rate_per_sec": 9.0
+    },
+    "ml_score": 0.7641,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:44",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 334,
+      "recent_5s": 42
+    },
+    "ml_score": 0.9208,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:44",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 297,
+      "anomalies": 69,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:45",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 15,
+      "ghost_aircraft": 15,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5934,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:45",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 45
+    },
+    "ml_score": 0.511,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:46",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 326
+    },
+    "ml_score": 0.8958,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:46",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 303,
+      "anomalies": 39,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6341,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:47",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 16,
+      "ghost_aircraft": 16,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5979,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:47",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 45
+    },
+    "ml_score": 0.511,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:47",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 325
+    },
+    "ml_score": 0.8808,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:47",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 354,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5072,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:47",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 308,
+      "anomalies": 36,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6818,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:48",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 15,
+      "ghost_aircraft": 15,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5934,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:48",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 327
+    },
+    "ml_score": 0.9145,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:49",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 362,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5072,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:49",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 313,
+      "anomalies": 36,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6818,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:50",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 331
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:50",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 25.0,
+      "mem_pct": 80.1
+    },
+    "ml_score": 0.5269,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:50",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 369,
+      "recent_5s": 27
+    },
+    "ml_score": 0.5017,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:50",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 322,
+      "anomalies": 37,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6642,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:51",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 328
+    },
+    "ml_score": 0.9388,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:51",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 378,
+      "recent_5s": 30
+    },
+    "ml_score": 0.5072,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:51",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 331,
+      "anomalies": 43,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.513,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:52",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 31,
+      "ghost_aircraft": 31,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5482,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:53",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 325
+    },
+    "ml_score": 0.8808,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:53",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 17,
+      "rate_per_sec": 8.5
+    },
+    "ml_score": 0.5157,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:53",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 389,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5001,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:54",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 34,
+      "ghost_aircraft": 34,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:54",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 322
+    },
+    "ml_score": 0.8013,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:54",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 398,
+      "recent_5s": 35
+    },
+    "ml_score": 0.5783,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:54",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 350,
+      "anomalies": 53,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5491,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:55",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 33,
+      "ghost_aircraft": 33,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:55",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 324
+    },
+    "ml_score": 0.8511,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:56",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 400,
+      "recent_5s": 27
+    },
+    "ml_score": 0.5017,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:56",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 358,
+      "anomalies": 56,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6643,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:57",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 323
+    },
+    "ml_score": 0.81,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:57",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 370,
+      "anomalies": 63,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7985,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:58",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 32,
+      "ghost_aircraft": 32,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:58",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 317
+    },
+    "ml_score": 0.6856,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:58",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 415,
+      "recent_5s": 25
+    },
+    "ml_score": 0.5162,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:26:58",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 376,
+      "anomalies": 66,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9318,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:00",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 35,
+      "ghost_aircraft": 35,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:00",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 317
+    },
+    "ml_score": 0.6856,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:00",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 11,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.5469,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:00",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 418,
+      "recent_5s": 20
+    },
+    "ml_score": 0.7274,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:00",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 388,
+      "anomalies": 68,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9615,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:01",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 35,
+      "ghost_aircraft": 35,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:01",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 314
+    },
+    "ml_score": 0.6162,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:01",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 429,
+      "recent_5s": 25
+    },
+    "ml_score": 0.5162,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:01",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 396,
+      "anomalies": 67,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9368,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:02",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 32,
+      "ghost_aircraft": 32,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:02",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 312
+    },
+    "ml_score": 0.5551,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:03",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 444,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5001,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:03",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 404,
+      "anomalies": 65,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9077,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:04",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 31,
+      "ghost_aircraft": 31,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5482,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:04",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 317
+    },
+    "ml_score": 0.6856,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:04",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 25.0,
+      "mem_pct": 80.1
+    },
+    "ml_score": 0.5269,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:04",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 452,
+      "recent_5s": 37
+    },
+    "ml_score": 0.704,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:04",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 412,
+      "anomalies": 64,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.8908,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:05",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 321
+    },
+    "ml_score": 0.7696,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:06",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 456,
+      "recent_5s": 35
+    },
+    "ml_score": 0.5783,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:06",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 417,
+      "anomalies": 61,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:07",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 321
+    },
+    "ml_score": 0.7696,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:07",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 72
+    },
+    "ml_score": 0.5647,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:07",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 462,
+      "recent_5s": 29
+    },
+    "ml_score": 0.5149,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:07",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 425,
+      "anomalies": 62,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7777,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 32,
+      "ghost_aircraft": 32,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7271,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 325
+    },
+    "ml_score": 0.8808,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 72
+    },
+    "ml_score": 0.5647,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 13,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.7639,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 18,
+      "rate_per_sec": 9.0
+    },
+    "ml_score": 0.7641,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 466,
+      "recent_5s": 22
+    },
+    "ml_score": 0.6842,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:08",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 440,
+      "anomalies": 65,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9077,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:10",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 321
+    },
+    "ml_score": 0.7696,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:10",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 469,
+      "recent_5s": 15
+    },
+    "ml_score": 0.7678,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:10",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 444,
+      "anomalies": 57,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7095,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:11",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 319
+    },
+    "ml_score": 0.7297,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:12",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 77.8,
+      "mem_pct": 80.6
+    },
+    "ml_score": 0.932,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:12",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 486,
+      "recent_5s": 27
+    },
+    "ml_score": 0.5017,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:12",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 452,
+      "anomalies": 57,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7095,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:15",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 336
+    },
+    "ml_score": 0.8332,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:16",
+    "airport": "ADS-B",
+    "attack": "RADAR_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "returns": 79
+    },
+    "ml_score": 0.8867,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:16",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 22,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:17",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 80.7
+    },
+    "ml_score": 0.532,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:18",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 31,
+      "rate_per_sec": 15.5
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:18",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 513,
+      "recent_5s": 49
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:18",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 486,
+      "anomalies": 84,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:20",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 80.7
+    },
+    "ml_score": 0.532,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:22",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 80.7
+    },
+    "ml_score": 0.532,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:24",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 550,
+      "recent_5s": 37
+    },
+    "ml_score": 0.5658,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:26",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 558,
+      "recent_5s": 36
+    },
+    "ml_score": 0.5234,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:27",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 568,
+      "recent_5s": 37
+    },
+    "ml_score": 0.5658,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:28",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 65
+    },
+    "ml_score": 0.6549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:30",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 70
+    },
+    "ml_score": 0.6549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:31",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 63
+    },
+    "ml_score": 0.6549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:32",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 13,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6191,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:33",
+    "airport": "ADS-B",
+    "attack": "VDL2_OVERLOAD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "datagrams": 84
+    },
+    "ml_score": 0.5339,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:34",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 34,
+      "ghost_aircraft": 34,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5638,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:34",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 65
+    },
+    "ml_score": 0.6549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:34",
+    "airport": "ADS-B",
+    "attack": "VDL2_OVERLOAD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "datagrams": 81
+    },
+    "ml_score": 0.5583,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:36",
+    "airport": "ADS-B",
+    "attack": "VDL2_OVERLOAD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "datagrams": 83
+    },
+    "ml_score": 0.5525,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:37",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 35,
+      "ghost_aircraft": 35,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5589,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:38",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 12,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.5318,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:39",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 632,
+      "recent_5s": 20
+    },
+    "ml_score": 0.5906,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:45",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 5.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.5473,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:47",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.6029,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:47",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 21,
+      "rate_per_sec": 10.5
+    },
+    "ml_score": 0.7064,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:49",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.6029,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:49",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 22,
+      "rate_per_sec": 11.0
+    },
+    "ml_score": 0.7372,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:53",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 15,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.5872,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:54",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 81.2
+    },
+    "ml_score": 0.5249,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:55",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 24,
+      "rate_per_sec": 12.0
+    },
+    "ml_score": 0.702,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:55",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 711,
+      "recent_5s": 48
+    },
+    "ml_score": 0.964,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:56",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 680,
+      "anomalies": 77,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.903,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:57",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 42.1,
+      "mem_pct": 81.3
+    },
+    "ml_score": 0.8342,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:57",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 719,
+      "recent_5s": 22
+    },
+    "ml_score": 0.6614,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:57",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 691,
+      "anomalies": 45,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6746,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:59",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 0.0,
+      "mem_pct": 81.3
+    },
+    "ml_score": 0.5249,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:59",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 731,
+      "recent_5s": 23
+    },
+    "ml_score": 0.6329,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:27:59",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 699,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6613,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:00",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 5.0,
+      "mem_pct": 80.9
+    },
+    "ml_score": 0.5486,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:02",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 5.0,
+      "mem_pct": 80.9
+    },
+    "ml_score": 0.5486,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:05",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 757,
+      "recent_5s": 21
+    },
+    "ml_score": 0.6962,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:06",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 749,
+      "anomalies": 64,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5009,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:11",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 787,
+      "recent_5s": 22
+    },
+    "ml_score": 0.6614,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:11",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 770,
+      "anomalies": 53,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5889,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:12",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 774,
+      "anomalies": 54,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5743,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:14",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 781,
+      "anomalies": 52,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6064,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:15",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 788,
+      "anomalies": 50,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5777,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:17",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 796,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6375,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:18",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 828,
+      "recent_5s": 24
+    },
+    "ml_score": 0.5247,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:18",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 802,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6375,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:20",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 834,
+      "recent_5s": 21
+    },
+    "ml_score": 0.6962,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:20",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 809,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6375,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:21",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 838,
+      "recent_5s": 16
+    },
+    "ml_score": 0.8299,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:22",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 817,
+      "anomalies": 47,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6375,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:23",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 42
+    },
+    "ml_score": 0.5959,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:23",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 848,
+      "recent_5s": 23
+    },
+    "ml_score": 0.6329,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:23",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 826,
+      "anomalies": 50,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5777,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:25",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 833,
+      "anomalies": 50,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5777,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:28",
+    "airport": "ADS-B",
+    "attack": "CPDLC_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "connections": 178
+    },
+    "ml_score": 0.5377,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:30",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 16,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6889,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:31",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 25,
+      "rate_per_sec": 12.5
+    },
+    "ml_score": 0.6912,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:31",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 885,
+      "recent_5s": 47
+    },
+    "ml_score": 0.923,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:32",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 859,
+      "anomalies": 68,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7889,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:33",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 893,
+      "recent_5s": 22
+    },
+    "ml_score": 0.5151,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:34",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 868,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5646,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:35",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 901,
+      "recent_5s": 20
+    },
+    "ml_score": 0.5967,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:35",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 875,
+      "anomalies": 43,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5844,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:37",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 908,
+      "recent_5s": 19
+    },
+    "ml_score": 0.6402,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:37",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 881,
+      "anomalies": 41,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6043,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:38",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 913,
+      "recent_5s": 21
+    },
+    "ml_score": 0.5503,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:38",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 892,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5097,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:41",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 39
+    },
+    "ml_score": 0.511,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:41",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 925,
+      "recent_5s": 21
+    },
+    "ml_score": 0.5503,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:45",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 937,
+      "recent_5s": 20
+    },
+    "ml_score": 0.5967,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:45",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 916,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5097,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:46",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 946,
+      "recent_5s": 22
+    },
+    "ml_score": 0.5151,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:46",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 924,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5097,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:49",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 941,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5097,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:51",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 975,
+      "recent_5s": 36
+    },
+    "ml_score": 0.6264,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:52",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 962,
+      "anomalies": 54,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.518,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:54",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 972,
+      "anomalies": 58,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5051,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:55",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 2,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6693,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:56",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 979,
+      "anomalies": 58,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5051,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:57",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 21.1,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.5755,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:28:57",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1001,
+      "recent_5s": 22
+    },
+    "ml_score": 0.5151,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:06",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 24,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 1.0,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:08",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 30,
+      "rate_per_sec": 15.0
+    },
+    "ml_score": 0.9473,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:08",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1058,
+      "recent_5s": 53
+    },
+    "ml_score": 0.9746,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:08",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1042,
+      "anomalies": 76,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9201,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:09",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 35,
+      "ghost_aircraft": 35,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5863,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:10",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 65
+    },
+    "ml_score": 0.5089,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:10",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 333
+    },
+    "ml_score": 0.5168,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:11",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 72.2,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.9026,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:11",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1081,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5133,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:13",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1091,
+      "recent_5s": 34
+    },
+    "ml_score": 0.5362,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:13",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1073,
+      "anomalies": 64,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.594,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:15",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1079,
+      "anomalies": 63,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5814,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:16",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 20.0,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.5806,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:18",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 65
+    },
+    "ml_score": 0.5089,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:19",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1127,
+      "recent_5s": 37
+    },
+    "ml_score": 0.6043,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:19",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1092,
+      "anomalies": 54,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5013,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:21",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1100,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5097,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:22",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1109,
+      "anomalies": 45,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5335,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:23",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 23.8,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.5775,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:23",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1115,
+      "anomalies": 42,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6759,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:26",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 22.2,
+      "mem_pct": 80.4
+    },
+    "ml_score": 0.6218,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:26",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1131,
+      "anomalies": 49,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5023,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:29",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 25.0,
+      "mem_pct": 80.4
+    },
+    "ml_score": 0.5943,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:31",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1154,
+      "anomalies": 54,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5013,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:32",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 30.0,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.6178,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:32",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1163,
+      "anomalies": 54,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5013,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:35",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 37,
+      "ghost_aircraft": 37,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5863,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:35",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 13,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.5132,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:35",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 22.2,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.5829,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:35",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1188,
+      "anomalies": 63,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5814,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:36",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 39,
+      "ghost_aircraft": 39,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5863,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:37",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1199,
+      "anomalies": 68,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.729,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:38",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 38,
+      "ghost_aircraft": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5863,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:38",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 26.3,
+      "mem_pct": 80.3
+    },
+    "ml_score": 0.6026,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:38",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1208,
+      "anomalies": 66,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6861,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:42",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 340
+    },
+    "ml_score": 0.8612,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:43",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 16,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.6111,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:44",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 25,
+      "rate_per_sec": 12.5
+    },
+    "ml_score": 0.6586,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:45",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1254,
+      "recent_5s": 48
+    },
+    "ml_score": 0.8771,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:45",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1232,
+      "anomalies": 85,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.9869,
+    "severity": "CRITICAL"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:47",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1263,
+      "recent_5s": 21
+    },
+    "ml_score": 0.5755,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:47",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1243,
+      "anomalies": 45,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.582,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:48",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1266,
+      "recent_5s": 21
+    },
+    "ml_score": 0.5755,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:48",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1248,
+      "anomalies": 43,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6632,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:49",
+    "airport": "ADS-B",
+    "attack": "ACARS_FLOOD",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 38
+    },
+    "ml_score": 0.5003,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:50",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 2,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.7189,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:50",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 15.0,
+      "mem_pct": 80.5
+    },
+    "ml_score": 0.5428,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:50",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 6,
+      "rate_per_sec": 3.0
+    },
+    "ml_score": 0.7843,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:50",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1277,
+      "recent_5s": 23
+    },
+    "ml_score": 0.5502,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:50",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1250,
+      "anomalies": 39,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6953,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:51",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1258,
+      "anomalies": 41,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7056,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:53",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1298,
+      "recent_5s": 32
+    },
+    "ml_score": 0.5174,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:53",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1268,
+      "anomalies": 44,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6158,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:55",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1307,
+      "recent_5s": 33
+    },
+    "ml_score": 0.5614,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:55",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1273,
+      "anomalies": 46,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5467,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:56",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 6,
+      "rate_per_sec": 3.0
+    },
+    "ml_score": 0.7843,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:56",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1315,
+      "recent_5s": 32
+    },
+    "ml_score": 0.5174,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:56",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1278,
+      "anomalies": 40,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6984,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:58",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1320,
+      "recent_5s": 23
+    },
+    "ml_score": 0.5502,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:58",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1284,
+      "anomalies": 40,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6984,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:59",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1331,
+      "recent_5s": 25
+    },
+    "ml_score": 0.5462,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:29:59",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1287,
+      "anomalies": 39,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6953,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:00",
+    "airport": "ADS-B",
+    "attack": "ADS_B_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "msgs": 14,
+      "ghost_aircraft": 14,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5217,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:01",
+    "airport": "ADS-B",
+    "attack": "MLAT_JAMMING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "spike": 6,
+      "rate_per_sec": 3.0
+    },
+    "ml_score": 0.7843,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:01",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1337,
+      "recent_5s": 24
+    },
+    "ml_score": 0.5759,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:01",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1293,
+      "anomalies": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6949,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:02",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 21.1,
+      "mem_pct": 80.5
+    },
+    "ml_score": 0.5186,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:02",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1350,
+      "recent_5s": 32
+    },
+    "ml_score": 0.5174,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:02",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1303,
+      "anomalies": 40,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6984,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:04",
+    "airport": "ADS-B",
+    "attack": "ICAO_COLLISION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "window_msgs": 1,
+      "max_dup": 1,
+      "dup_ratio": 0.0
+    },
+    "ml_score": 0.7189,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:04",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1363,
+      "recent_5s": 41
+    },
+    "ml_score": 0.745,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:04",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1305,
+      "anomalies": 34,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7549,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:05",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 26.3,
+      "mem_pct": 80.5
+    },
+    "ml_score": 0.553,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:06",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1370,
+      "recent_5s": 35
+    },
+    "ml_score": 0.6166,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:06",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1312,
+      "anomalies": 38,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6949,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:07",
+    "airport": "ADS-B",
+    "attack": "ATC_BAND_NOISE",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "cpu_impact": 19.0,
+      "mem_pct": 80.5
+    },
+    "ml_score": 0.5299,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:07",
+    "airport": "ADS-B",
+    "attack": "FMS_INJECTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "pos_msgs": 1380,
+      "recent_5s": 34
+    },
+    "ml_score": 0.5771,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:07",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1321,
+      "anomalies": 43,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.6632,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:09",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 333
+    },
+    "ml_score": 0.5006,
+    "severity": "LOW"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:09",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1327,
+      "anomalies": 41,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.7056,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:10",
+    "airport": "ADS-B",
+    "attack": "ATIS_DISRUPTION",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "broadcasts": 336
+    },
+    "ml_score": 0.6845,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-05-14 09:30:10",
+    "airport": "ADS-B",
+    "attack": "GPS_SPOOFING",
+    "icao": "AUTO_DETECTED",
+    "source": "ISOLATION_FOREST",
+    "details": {
+      "adsb_total": 1338,
+      "anomalies": 49,
+      "unique_ratio": 1.0
+    },
+    "ml_score": 0.5202,
+    "severity": "LOW"
+  }
+]

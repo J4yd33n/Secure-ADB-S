@@ -1,0 +1,22 @@
+body {
+  background: black;
+  color: lime;
+  font-family: monospace;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid lime;
+  padding: 6px;
+}
+
+canvas {
+  margin: 20px;
+  border: 2px solid lime;
+}
